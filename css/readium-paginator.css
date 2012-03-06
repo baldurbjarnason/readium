@@ -3,8 +3,9 @@ html, body {
 	padding: 0; 
 /*	height: 100%;  
 	width: 100%; */
-	background-color: #BBB;
+	background-color: white;
 }
+
 
 #container {
     margin: 0;
@@ -46,14 +47,32 @@ html, body {
     clear: both;
 }
 
+
+/* 
+The whole percentage width thing isn't optimal. I've added a couple of media queries to widen this when the window is narrower.
+ */
+
 .page-margin {
-	height: 96%;
-	width: 60%;
+	height: 100%;
+	width: 50%;
 	margin: 0 auto;
 	padding: 0;
-	-webkit-box-shadow: 0 0 5px 5px#888;
-	background-color: white;
+	background-color: transparent;
 	overflow: visible;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+	.page-margin {
+	width: 70%;
+	}
+}
+
+@media only screen and (max-width: 799px) {
+	.page-margin {
+	width: 80%;
+	}
 }
 
 .page-margin:before, .page-margin:after {
@@ -63,8 +82,9 @@ html, body {
     clear: both;
 }
 
+
 .page {
-    background-color: white;
+    background-color: transparent;
     border: none;
     content: -webkit-from-flow('foo');
     -webkit-flow-from: foo;
@@ -83,7 +103,7 @@ html, body {
 }
 
 #container {
-	background-color: #BBB;
+	background-color: transparent;
 }
 
 #settings {
@@ -215,7 +235,7 @@ span.setting-button:hover {
 }
 
 .two-up .page-margin {
-	width: 90%;
+	width: 100%;
 	margin: 0;
 }
 
@@ -223,6 +243,7 @@ span.setting-button:hover {
 	width: 85%;
 }
 
+/* 
 #spine-divider {
     position: absolute;
     top: 2%;
@@ -236,6 +257,7 @@ span.setting-button:hover {
 	background-color: #444;
 	opacity: 0.6;
 }
+ */
 
 
 /**************** THE TOC PANEL ************************/
@@ -369,7 +391,6 @@ img#readium-icon {
 	text-rendering: optimizelegibility;
 	display: block;
 }
-
 
 
 
