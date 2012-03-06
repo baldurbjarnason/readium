@@ -7,6 +7,15 @@ html, body {
 }
 
 
+/* 
+Setting the base font-size for the viewer.
+*/
+
+#readium-content-container {
+font-size: 1.2em;
+}
+
+
 #container {
     margin: 0;
     padding: 0;

@@ -9,7 +9,7 @@ Readium.TocManager = function(book) {
 	var _fsPath;
 	var _urlArgs;
 	var _book;
-	var _fontSize = 12; // 10 => 1.0em
+	var _fontSize = 10; // 10 => 1.0em
 	
 	var fireRepaginateEvent = function() {
 		$('#readium-content-container').trigger("content-size-changed");
